@@ -1,32 +1,55 @@
 <script setup>
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 
-// Use eager glob to grab all student metadata
 const modules = import.meta.glob('/public/archive/**/*.json', { eager: true });
+
+// State for Search and Filter
+const searchQuery = ref('');
+const selectedTag = ref('');
 
 const allProjects = computed(() => {
   const projects = [];
   Object.keys(modules).forEach((path) => {
-    // Vite glob imports can have different structures; this handles both
     const data = modules[path].default || modules[path];
-    
     const pathParts = path.split('/');
     const semester = pathParts[3]; 
     const studentFolder = pathParts[4];
     const assetBase = `/archive/${semester}/${studentFolder}/`;
 
     if (data.projects) {
-      data.projects.forEach((proj) => {
+      data.projects.forEach((proj, index) => {
+        // Create a unique slug for routing: "john-doe-reactive-fire"
+        const slug = `${data.author.name}-${proj.project_title}`.toLowerCase().replace(/\s+/g, '-');
+        
         projects.push({
           ...proj,
+          id: slug,
           authorName: data.author.name,
           videoUrl: `${assetBase}${proj.video_file}`,
-          semesterLabel: proj.semester || semester // Fallback to folder name
+          semesterLabel: proj.semester || semester
         });
       });
     }
   });
   return projects;
+});
+
+// The Search Logic
+const filteredProjects = computed(() => {
+  return allProjects.value.filter(p => {
+    const searchTerm = searchQuery.value.toLowerCase();
+    const matchesSearch = p.project_title.toLowerCase().includes(searchTerm) || 
+                          p.authorName.toLowerCase().includes(searchTerm);
+    const matchesTag = !selectedTag.value || p.tags.includes(selectedTag.value);
+    return matchesSearch && matchesTag;
+  });
+});
+
+// Extract unique tags for the filter dropdown
+const allTags = computed(() => {
+  const tags = new Set();
+  allProjects.value.forEach(p => p.tags.forEach(t => tags.add(t)));
+  return Array.from(tags).sort();
 });
 </script>
 
@@ -35,13 +58,30 @@ const allProjects = computed(() => {
     <header class="gallery-header">
       <div class="counter">VFX Research Archive</div>
       <h1>Student Submissions</h1>
-      <p>A searchable database of technical art, shaders, and generative soundscapes.</p>
+      
+      <div class="filter-controls">
+        <input 
+          v-model="searchQuery" 
+          type="text" 
+          placeholder="Search by project or author..." 
+          class="search-input"
+        />
+        <select v-model="selectedTag" class="tag-select">
+          <option value="">All Specialties</option>
+          <option v-for="tag in allTags" :key="tag" :value="tag">{{ tag }}</option>
+        </select>
+      </div>
     </header>
 
     <div class="project-grid">
-      <article v-for="project in allProjects" :key="project.project_title" class="vfx-card">
+      <router-link 
+        v-for="project in filteredProjects" 
+        :key="project.id" 
+        :to="'/project/' + project.id"
+        class="vfx-card compact"
+      >
         <div class="media-container">
-          <video controls preload="metadata">
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
             <source :src="project.videoUrl" type="video/mp4">
           </video>
         </div>
@@ -51,142 +91,54 @@ const allProjects = computed(() => {
             <h2>{{ project.project_title }}</h2>
             <code class="semester-code">{{ project.semesterLabel }}</code>
           </div>
-          
-          <p class="description">{{ project.description }}</p>
-          
-          <div class="tag-cloud">
-            <span v-for="tag in project.tags" :key="tag" class="tech-tag">
-              {{ tag }}
-            </span>
-          </div>
-
-          <footer class="card-footer">
-            <span class="author">{{ project.authorName }}</span>
-            <a :href="project.blueprint_url" target="_blank" class="blueprint-link">
-              BlueprintUE ↗
-            </a>
-          </footer>
+          <span class="author-subtext">by {{ project.authorName }}</span>
         </div>
-      </article>
-    </div>
-    
-    <div id="spacer">
-      <div class="ticks"></div>
+      </router-link>
     </div>
   </div>
 </template>
 
 <style scoped>
-/* Leveraging your existing :root variables */
-.gallery-header {
-  margin-bottom: 48px;
-  max-width: 800px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 32px;
-  width: 100%;
-  padding: 0 32px;
-  box-sizing: border-box;
-  text-align: left;
-}
-
-.vfx-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+.filter-controls {
   display: flex;
-  flex-direction: column;
+  gap: 15px;
+  margin-top: 24px;
+  justify-content: center;
+}
 
-  &:hover {
-    border-color: var(--accent);
-    box-shadow: var(--shadow);
-  }
+.search-input, .tag-select {
+  padding: 10px 15px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  font-family: var(--sans);
+}
+
+.vfx-card.compact {
+  text-decoration: none;
+  /* Make cards smaller as requested */
+  max-width: 300px; 
+}
+
+.vfx-card.compact h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.author-subtext {
+  font-size: 0.8rem;
+  color: var(--text);
+  display: block;
+  margin-top: 4px;
 }
 
 .media-container video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: var(--text-h);
-  display: block;
+  pointer-events: none; /* Prevents controls from showing on hover */
 }
 
-.card-body {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.card-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 12px;
-}
-
-.semester-code {
-  font-size: 12px;
-  background: var(--accent-bg);
-  color: var(--accent);
-}
-
-.description {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--text);
-  margin-bottom: 20px;
-}
-
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: auto;
-  margin-bottom: 24px;
-}
-
-.tech-tag {
-  font-family: var(--mono);
-  font-size: 11px;
-  padding: 2px 8px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  text-transform: uppercase;
-  color: var(--text);
-}
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-}
-
-.author {
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-.blueprint-link {
-  font-size: 14px;
-  color: var(--accent);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@media (max-width: 1024px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-  }
+/* Ensure the grid handles smaller cards well */
+.project-grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 </style>
