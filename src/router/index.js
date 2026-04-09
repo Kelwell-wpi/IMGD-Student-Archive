@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import vfxGallery from '../components/vfxGallery.vue'
 import ProjectDetail from '../components/ProjectDetail.vue'
 
@@ -20,6 +20,6 @@ const routes = [
 ]
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), 
   routes
 })
