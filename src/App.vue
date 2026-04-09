@@ -27,6 +27,10 @@ import NavBar from './components/NavBar.vue';
   transition: opacity 0.2s ease;
 }
 
+#center {
+  width: 100%;
+}
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;

@@ -1,7 +1,7 @@
 <script setup>
   import { ref, computed } from 'vue';
 
-  const modules = import.meta.glob('/public/archive/**/*.json', { eager: true });
+  const modules = import.meta.glob('/src/archive/**/*.json', { eager: true });
 
   const searchQuery = ref('');
   const selectedTag = ref('');
@@ -11,18 +11,19 @@
     Object.keys(modules).forEach((path) => {
       const data = modules[path].default || modules[path];
       const pathParts = path.split('/');
+      
+      // Fixed index: /src/archive/[semester]/[student]/metadata.json
       const semester = pathParts[3]; 
-      const studentFolder = pathParts[4];
-      const assetBase = `/archive/${semester}/${studentFolder}/`;
 
       if (data.projects) {
         data.projects.forEach((proj) => {
           const slug = `${data.author.name}-${proj.project_title}`.toLowerCase().replace(/\s+/g, '-');
+          
           projects.push({
             ...proj,
             id: slug,
             authorName: data.author.name,
-            videoUrl: `${assetBase}${proj.video_file}`,
+            videoUrl: proj.video_file, 
             semesterLabel: proj.semester || semester
           });
         });
@@ -46,14 +47,56 @@
     allProjects.value.forEach(p => p.tags.forEach(t => tags.add(t)));
     return Array.from(tags).sort();
   });
+
+  const getYouTubeId = (url) => {
+    const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[7].length === 11) ? match[7] : null;
+  };
+
+  const getVimeoId = (url) => {
+    const match = url.match(/(?:vimeo\.com\/|player\.vimeo\.com\/video\/)([0-9]+)/);
+    return match ? match[1] : null;
+  };
+
+  const getThumbnailUrl = (url) => {
+    if (!url) return '';
+
+    const ytId = getYouTubeId(url);
+    if (ytId) {
+      // hqdefault is the most reliable high-quality thumbnail that avoids 404 errors
+      return `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+    }
+
+    const vimeoId = getVimeoId(url);
+    if (vimeoId) {
+      return `https://vumbnail.com/${vimeoId}.jpg`;
+    }
+
+    return '';
+  };
+
+  const getEmbedUrl = (url) => {
+    if (!url) return '';
+    
+    const ytId = getYouTubeId(url);
+    if (ytId) {
+      return `https://www.youtube.com/embed/${ytId}?autoplay=0&rel=0`;
+    }
+    
+    const vimeoId = getVimeoId(url);
+    if (vimeoId) {
+      return `https://player.vimeo.com/video/${vimeoId}`;
+    }
+    
+    return url;
+  };
 </script>
 
 <template>
-  <div id="center">
     <header class="gallery-header">
       <div class="counter">VFX Research Archive</div>
-      <h1>Student Submissions</h1>
-      
+
       <div class="filter-controls">
         <input 
           v-model="searchQuery" 
@@ -62,7 +105,7 @@
           class="search-input"
         />
         <select v-model="selectedTag" class="tag-select">
-          <option value="">All Specialties</option>
+          <option value="">All Tags</option>
           <option v-for="tag in allTags" :key="tag" :value="tag">{{ tag }}</option>
         </select>
       </div>
@@ -76,9 +119,12 @@
         class="vfx-card compact"
       >
         <div class="media-container">
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source :src="project.videoUrl" type="video/mp4">
-          </video>
+          <img 
+            v-if="project.videoUrl"
+            :src="getThumbnailUrl(project.videoUrl)" 
+            @error="(e) => e.target.src = '/src/assets/missing-thumb.png'"
+            class="gallery-thumb"
+          />
         </div>
 
         <div class="card-body">
@@ -88,47 +134,56 @@
         </div>
       </router-link>
     </div>
-  </div>
 </template>
 
 <style scoped>
+  .gallery-header {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .counter {
+    background-color: #333;
+    color: #FFF;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+
   .filter-controls {
     display: flex;
+    width: 100%;
     gap: 15px;
-    margin-top: 24px;
-    justify-content: center;
+    margin-top: 20px;
+    justify-content: flex-end;
   }
 
   .search-input, .tag-select {
     padding: 10px 15px;
-    background: var(--code-bg);
-    border: 1px solid var(--border);
+    background: #EEE;
+    border: 1px solid #DDD;
     border-radius: 6px;
-    color: var(--text-h);
-    font-family: var(--sans);
+    color: #333;
   }
 
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     grid-auto-rows: auto;
-    justify-content: space-between; 
-    gap: 15px;
+    justify-content: center; 
+    gap: 30px; /* This gap is inherited by subgrids unless overridden */
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 32px;
-    box-sizing: border-box;
   }
 
   .vfx-card.compact {
     text-decoration: none;
-    max-width: 300px; 
+    background: white;
     border: 1px solid #DDD;
     border-radius: 15px;
+    overflow: hidden;
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 4;
+    row-gap: 0; 
     margin-bottom: 30px;
   }
 
@@ -136,52 +191,52 @@
     grid-row: 1;
     width: 100%;
     aspect-ratio: 16 / 9;
-    background-image: url('src/assets/missing-thumb.png'); 
-    background-size: cover;
-    background-position: center;
+    background-color: #000;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .media-container video {
+  .gallery-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
-    z-index: 1;
     pointer-events: none; 
+    user-select: none;
   }
 
   .card-body {
     grid-row: span 3;
     display: grid;
     grid-template-rows: subgrid;
+    padding: 15px;
     justify-items: center;
-    margin-bottom: 15px;
+    text-align: center;
+    /* FIX: Override inherited gap from parent grid */
+    row-gap: 0;
   }
 
   .vfx-card.compact h2 {
     grid-row: 1;
     font-size: 1rem;
     margin: 0;
-    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #333;
   }
 
   .semester-code {
-    background-color: #AAA;
-    color: #333;
-    font-size: 12px;
-    align-self: center;
-    width: fit-content;
     grid-row: 2;
+    background-color: #DDD;
+    color: #222;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin: 0; 
+    margin-bottom: 10px; 
   }
 
   .author-subtext {
     grid-row: 3;
     font-size: 0.8rem;
-    color: var(--text);
-    display: block;
+    color: #666;
+    margin-bottom: 5px;
   }
 </style>

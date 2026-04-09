@@ -8,25 +8,25 @@
     const allProjects = computed(() => {
     const projects = [];
     Object.keys(modules).forEach((path) => {
-        const data = modules[path].default || modules[path];
-        const pathParts = path.split('/');
-        const semester = pathParts[3];
-        const studentFolder = pathParts[4];
-        const assetBase = `/archive/${semester}/${studentFolder}/`;
+      const data = modules[path].default || modules[path];
+      const pathParts = path.split('/');
+      const semester = pathParts[3];
+      const studentFolder = pathParts[4];
+      const assetBase = `/archive/${semester}/${studentFolder}/`;
 
-        if (data.projects) {
+      if (data.projects) {
         data.projects.forEach((proj) => {
-            const slug = `${data.author.name}-${proj.project_title}`.toLowerCase().replace(/\s+/g, '-');
-            projects.push({
+          const slug = `${data.author.name}-${proj.project_title}`.toLowerCase().replace(/\s+/g, '-');
+          
+          projects.push({
             ...proj,
             id: slug,
             authorName: data.author.name,
-            videoUrl: `${assetBase}${proj.video_file}`,
-            semesterLabel: proj.semester || semester,
-            authorProjects: data.projects // Keep track of sibling projects for the sidebar
-            });
+            videoUrl: proj.video_file, 
+            semesterLabel: proj.semester || semester
+          });
         });
-        }
+      }
     });
     return projects;
     });
@@ -36,11 +36,27 @@
     });
 
     const authorWork = computed(() => {
-    if (!project.value) return [];
-    return allProjects.value.filter(p => 
-        p.authorName === project.value.authorName && p.id !== project.value.id
-    );
+      if (!project.value) return [];
+      return allProjects.value.filter(p => 
+          p.authorName === project.value.authorName && p.id !== project.value.id
+      );
     });
+
+    const getEmbedUrl = (url) => {
+      if (!url) return '';
+      
+      if (url.includes('youtube.com') || url.includes('youtu.be')) {
+        const id = url.includes('v=') ? url.split('v=')[1].split('&')[0] : url.split('/').pop();
+        return `https://www.youtube.com/embed/${id}?autoplay=0&rel=0`;
+      }
+      
+      if (url.includes('vimeo.com')) {
+        const id = url.split('/').pop();
+        return `https://player.vimeo.com/video/${id}`;
+      }
+      
+      return url;
+    };
 </script>
 
 <template>
