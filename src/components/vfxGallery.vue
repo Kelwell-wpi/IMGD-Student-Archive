@@ -1,5 +1,6 @@
 <script setup>
   import { ref, computed } from 'vue';
+  import missingThumb from '@/assets/missing-thumb.png';
 
   const modules = import.meta.glob('/src/archive/**/*.json', { eager: true });
 
@@ -112,7 +113,7 @@
           <img 
             v-if="project.videoUrl"
             :src="getThumbnailUrl(project.videoUrl)" 
-            @error="(e) => e.target.src = '/src/assets/missing-thumb.png'"
+            @error="(e) => e.target.src = missingThumb"
             class="gallery-thumb"
           />
         </div>
