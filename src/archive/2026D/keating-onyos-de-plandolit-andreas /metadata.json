@@ -1,44 +1,53 @@
 {
   "author": {
-    "name": "Andreas Keating Onyós de Plandolit",
-    "graduation_year": "2027",
-    "major": "CS/IMGD",
-    "contact_email": "jdoe@wpi.edu",
-    "portfolio_url": "https://janedoe.com"
+    "name": "Andreas Keating Onyós",
+    "graduation_year": "May 15th 2026",
+    "major": "Computer Science (+ minor in IMGD)",
+    "contact_email": "aplandolit@wpi.edu",
+
+    "instructions": "Fill out all relevant fields in this document. If you are not using a field (i.e., you don't have any code blocks) then fully delete that field. Within the 'projects' array below, include 1 entry for each of your experiments. You can copy and past for additional projects."
   },
+
   "projects": [
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Audio-Reactive Niagara Storm",
-      "tags": ["Niagara", "Lumen", "Metasounds"],
-      "engine_version": "5.7.4",
-      "instruction_count": 184,
-      "blueprint_url": "https://blueprintue.com/render/xxxx1/",
-      "video_file": "storm-vfx-demo.mp4",
-      "description": "Exploration of linking Metasound envelope followers to Niagara spawn rates to create a storm that reacts to audio amplitude."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Nuclear Explosion Effect in EmberGen",
+      "engine_version": "N/A — created in EmberGen 1.2.8, not Unreal",
+      "description": "A realistic nuclear explosion effect created in EmberGen, focusing on smoke plume shape, fire volume, and timing.",
+
+      "tags":           ["EmberGen", "Explosion", "Fire", "Smoke", "VFX", "Simulation"], 
+      "video_file":     ["https://www.youtube.com/playlist?list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw"],
+      "pdf_file":       ["VFX_Portfolio_Debrief.pdf"],
+      "codeFile":       "Bibliography.txt",
+      "codeLang":       "txt",
+      "override_thumb": true
     },
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Procedural Lightning Ribbon",
-      "tags": ["HLSL", "Ribbon-Emitter", "Lumen"],
-      "engine_version": "5.7.4",
-      "instruction_count": 92,
-      "blueprint_url": "https://blueprintue.com/render/xxxx2/",
-      "video_file": "lightning-vfx-demo.mp4",
-      "description": "A custom HLSL shader driving a Niagara ribbon emitter to simulate branching lightning strikes with real-time Lumen emission."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Crashing Wave Effect in LiquiGen",
+      "engine_version": "N/A — created in LiquiGen 1.0.8, not Unreal",
+      "description": "A crashing wave effect created in LiquiGen, focusing on fluid motion, wave behavior, and readable water movement across the scene.",
+      
+      "tags":           ["LiquiGen", "Water", "Fluid", "VFX", "Simulation"], 
+      "video_file":     ["https://www.youtube.com/watch?v=lFRhs0YvrBk&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=1"],
+      "pdf_file":       ["VFX_Portfolio_Debrief.pdf"],
+      "codeFile":       "Bibliography.txt",
+      "codeLang":       "txt"
     },
     {
-      "course_id": "IMGD-4000",
-      "semester": "2026-Fall",
-      "project_title": "Advanced Fluid Dynamics",
-      "tags": ["EmberGen", "VDB", "Volumetrics"],
-      "engine_version": "5.8.0",
-      "instruction_count": 310,
-      "blueprint_url": "https://blueprintue.com/render/xxxx3/",
-      "video_file": "fluid-vfx-demo.mp4",
-      "description": "Integration of EmberGen VDB exports into Unreal using the new volumetric rendering pipeline for realistic fire and smoke."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Mountain Crevasse Terrain in GeoGen",
+      "engine_version": "N/A — created in GeoGen 0.5.5-beta, not Unreal",
+      "description": "A procedural mountain crevasse environment created in GeoGen, using terrain shaping, color gradients, lighting, and fog to create depth and atmosphere.",
+      
+      "tags":           ["GeoGen", "Terrain", "Mountain", "Crevasse", "Fog", "VFX"], 
+      "video_file":     ["https://www.youtube.com/watch?v=OSkzH_OFvB8&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=2"],
+      "pdf_file":       ["VFX_Portfolio_Debrief.pdf"],
+      "codeFile":       "Bibliography.txt",
+      "codeLang":       "txt"
     }
   ]
 }

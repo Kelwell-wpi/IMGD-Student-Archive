@@ -137,9 +137,7 @@ watch(() => props.path, loadTutorial);
 }
 
 .tutorial-content :deep(h1), 
-.tutorial-content :deep(h2), 
 .tutorial-content :deep(h3) {
-  margin-top: 2.5rem;
   margin-bottom: 1.2rem;
   font-weight: 600;
   color: #1a1a1a;
@@ -147,9 +145,17 @@ watch(() => props.path, loadTutorial);
   padding-bottom: 10px;
 }
 
-.tutorial-content :deep(h3) {
-  margin-top: 100px;
+.tutorial-content :deep(h2) {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #AC2B37;
 }
+
+.tutorial-content :deep(img) {
+  margin-top: 50px;
+}
+
 
 .tutorial-content :deep(ul), 
 .tutorial-content :deep(ol) {

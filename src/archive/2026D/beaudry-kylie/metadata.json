@@ -1,44 +1,44 @@
 {
   "author": {
     "name": "Kylie Beaudry",
-    "graduation_year": "2027",
-    "major": "CS/IMGD",
-    "contact_email": "jdoe@wpi.edu",
-    "portfolio_url": "https://janedoe.com"
+    "graduation_year": "2026",
+    "major": "IMGD BA (Tech Art)",
+    "contact_email": "kmbeaudry@wpi.edu",
+    "portfolio_url": "https://kbeaudry3d.carrd.co/",
+
+    "instructions": "Fill out all relevant fields in this document. If you are not using a field (i.e., you don't have any code blocks) then fully delete that field. Within the 'projects' array below, include 1 entry for each of your experiments. You can copy and past for additional projects."
   },
+
   "projects": [
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Audio-Reactive Niagara Storm",
-      "tags": ["Niagara", "Lumen", "Metasounds"],
-      "engine_version": "5.7.4",
-      "instruction_count": 184,
-      "blueprint_url": "https://blueprintue.com/render/xxxx1/",
-      "video_file": "storm-vfx-demo.mp4",
-      "description": "Exploration of linking Metasound envelope followers to Niagara spawn rates to create a storm that reacts to audio amplitude."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Material Based Toon/Outline Shader",
+      "engine_version": "5.6.1",
+      "description": "Masked overlay material outline shader. Can be applied to specific objects rather than everything in a scene.",
+
+      "tags":           ["Shader", "Material", "Outline", "Stylized"], 
+      "video_file":     ["https://youtu.be/IN1VJ6bPS2U"],
+      "blueprint_url":  ["https://blueprintue.com/blueprint/2l6s8vrg/"],
+      "hasTutorial":    true,
+      "archivePath":    "2026D/beaudry-kylie/T1",
+      "codeFile":       "kbeaudry_bibliography.txt",
+      "codeLang":       "txt"
     },
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Procedural Lightning Ribbon",
-      "tags": ["HLSL", "Ribbon-Emitter", "Lumen"],
-      "engine_version": "5.7.4",
-      "instruction_count": 92,
-      "blueprint_url": "https://blueprintue.com/render/xxxx2/",
-      "video_file": "lightning-vfx-demo.mp4",
-      "description": "A custom HLSL shader driving a Niagara ribbon emitter to simulate branching lightning strikes with real-time Lumen emission."
-    },
-    {
-      "course_id": "IMGD-4000",
-      "semester": "2026-Fall",
-      "project_title": "Advanced Fluid Dynamics",
-      "tags": ["EmberGen", "VDB", "Volumetrics"],
-      "engine_version": "5.8.0",
-      "instruction_count": 310,
-      "blueprint_url": "https://blueprintue.com/render/xxxx3/",
-      "video_file": "fluid-vfx-demo.mp4",
-      "description": "Integration of EmberGen VDB exports into Unreal using the new volumetric rendering pipeline for realistic fire and smoke."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Screen Based Toon/Outline Shader",
+      "engine_version": "5.6.1",
+      "description": "Screen based outline shader with a few quality of life features (minimum line thickness, consistent line thickness).",
+      
+      "tags":           ["Shader", "Post-Process", "Screen based", "Outline", "Stylized"], 
+      "video_file":     ["https://youtu.be/YDaI0UIMog4"],
+      "blueprint_url":  ["https://blueprintue.com/blueprint/e-rx6vi8/", "https://blueprintue.com/blueprint/kqw92_uk/", "https://blueprintue.com/blueprint/y-fowcf-/", "https://blueprintue.com/blueprint/et6dqmat/", "https://blueprintue.com/blueprint/j3o5zu12/"],
+      "hasTutorial":    true,
+      "archivePath":    "2026D/beaudry-kylie/T1",
+      "codeFile":       "kbeaudry_bibliography.txt",
+      "codeLang":       "txt"
     }
   ]
 }

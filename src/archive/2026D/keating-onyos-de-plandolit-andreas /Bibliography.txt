@@ -1,0 +1,66 @@
+Bibliography Organized by Project Area
+Andreas Keating Onyós
+
+
+
+Unreal Engine Niagara:
+
+scobelverse. “Unreal Engine: Niagara.” YouTube playlist. Accessed April 30, 2026. https://youtube.com/playlist?list=PLnvAM3V78M2pD4oN07PiwR9Q111d7G4-I&si=CAw6DUVPigVaxNCJ.
+
+Unreal University. “Introduction To Niagara (Unreal Engine 5 Tutorial).” YouTube video. Oct 27, 2025. https://www.youtube.com/watch?v=hnUQiwJweeg.
+
+
+
+EmberGen:
+
+Graphical Ninja. “Realistic Nuclear Explosions | Embergen 1.1 + Blender.” YouTube video. Feb 17, 2024. https://www.youtube.com/watch?v=1cxoO4JUc4g&t=87s.
+
+JangaFX VFX Software & Tutorials. “EmberGen 0.7.5 Live Training #1: Creating Explosions & Fire.” YouTube video. Sep 21, 2021. https://www.youtube.com/watch?v=viyZZz20tLs&t=7541s.
+
+JangaFX VFX Software & Tutorials. “EmberGen 1.0 Tutorial: Getting Started With The UI.” YouTube video. Jun 14, 2023. https://www.youtube.com/watch?v=Wwu4KrdYBY8&list=PL62z6VLhRxEymgOJpIG_3IyPmIPn8iCcw.
+
+JangaFX VFX Software & Tutorials. “EmberGen Tutorial #0002: Color Gradients For Fire.” YouTube video. Apr 29, 2020. https://youtu.be/6Zq0nSNgE7A?si=LWrdYf-YVlGrlVg0.
+
+JangaFX VFX Software & Tutorials. “EmberGen Tutorial #0003: Emitter Basics.” YouTube video. Apr 29, 2020. https://youtube.com/watch?v=Lberr035dJ8&list=PL62z6VLhRxEymgOJpIG_3IyPmIPn8iCcw&index=3&pp=iAQB.
+
+JangaFX VFX Software & Tutorials. “EmberGen Tutorial: Nuclear Explosion.” YouTube video. Sep 3, 2024. https://www.youtube.com/watch?v=edxt3quK-kc&list=WL&index=9&t=716s.
+
+JangaFX VFX Software & Tutorials. “EmberGen Tutorials.” YouTube playlist. Accessed April 30, 2026. https://youtube.com/playlist?list=PL62z6VLhRxEymgOJpIG_3IyPmIPn8iCcw&si=IE_5HwlNohWtdfx6.
+
+JangaFX VFX Software & Tutorials. “Quick EmberGen Tutorial: Adding Detail To Your Simulations.” YouTube video. Mar 24, 2022. https://www.youtube.com/watch?v=TR7pP-m0e_o&list=PL62z6VLhRxEwcCh0kbCgyLnprYw2x-oVn.
+
+JangaFX VFX Software & Tutorials. “Quick EmberGen Tutorial: Explosive and Magic Shockwaves.” YouTube video. Apr 6, 2022. https://www.youtube.com/watch?v=Zkb6IJPOaNA&list=WL&index=8&t=151s.
+
+JangaFX VFX Software & Tutorials. “Quick EmberGen Tutorials Series.” YouTube playlist. Accessed April 30, 2026. https://www.youtube.com/playlist?list=PL62z6VLhRxEwcCh0kbCgyLnprYw2x-oVn&si=JkNiAoe1n875znaf.
+
+Jason Key. “Using Noise to Add Extra Detail to EmberGen Simulations.” YouTube video. Sep 23, 2024. https://www.youtube.com/watch?v=4Ht6Q1ka0hk&list=PL62z6VLhRxEymgOJpIG_3IyPmIPn8iCcw&index=22&t=76s.
+
+Royals & Rogues. “EmberGen Tutorial.” YouTube video. Aug 16, 2023. https://www.youtube.com/watch?v=MJlDWwUe-P4&t=439s.
+
+SARKAMARI. “#UE5 Series: Creating Fire with UNREAL Engine.” YouTube video. Aug 19, 2023. https://www.youtube.com/watch?v=UQoFWJ5dwVM.
+
+
+
+LiquiGen:
+
+Alae Hatoum. “Learn Liquigen.” YouTube playlist. Accessed April 30, 2026. https://youtube.com/playlist?list=PL1n2EE-JSpIp0CaZ0RQTPau3_ll2LRSIy&si=Sgm9eL9vvpNDQRQJ.
+
+Default Cube. “Liquigen | The Era of Realtime Fluid Simulation.” YouTube video. Feb 14, 2024. https://www.youtube.com/watch?v=0AkbQHYF-dU&list=PL1n2EE-JSpIp0CaZ0RQTPau3_ll2LRSIy&index=2.
+
+Nyjo FX | Houdini, EmberGen, LiquiGen VFX Courses. “LiquidGen Water Sphere Free Tutorial - Part 1.” YouTube video. Jul 31, 2024. https://www.youtube.com/watch?v=N4pxuDvSXaM&t=289s.
+
+Royals & Rogues. “LiquiGen Quick Start Guide.” YouTube video. Jul 26, 2024. https://www.youtube.com/watch?v=db2XawZWBaI&list=PL1n2EE-JSpIp0CaZ0RQTPau3_ll2LRSIy.
+
+TopChannel1on1. “Liquigen Fluid System Full Walkthrough.” YouTube video. Jul 30, 2024. https://www.youtube.com/watch?v=BvlGBvfr0Qg&t=11s.
+
+
+
+GeoGen:
+
+kiwivi. “GeoGen Basics In Depth Tutorial.” YouTube video. Dec 4, 2023. https://www.youtube.com/watch?v=8Qpu_a37j-Y&list=PL_vCRDnP9jqZ8PLr7geEnWv2OkewyxoX7.
+
+kiwivi. “GeoGen Tutorials.” YouTube playlist. Accessed April 30, 2026. https://youtube.com/playlist?list=PL_vCRDnP9jqZ8PLr7geEnWv2OkewyxoX7&si=nvSXxY3nhw8KYYYh.
+
+kiwivi. “How To Make Mountains In GeoGen Tutorial.” YouTube video. Dec 10, 2023. https://www.youtube.com/watch?v=QSZ5TPpXb_g&list=PL_vCRDnP9jqZ8PLr7geEnWv2OkewyxoX7&index=5.
+
+Nyjo FX | Houdini, EmberGen, LiquiGen VFX Courses. “GeoGen Tutorial.” YouTube video. Dec 12, 2023. https://www.youtube.com/watch?v=drcVLRWyY_o&t=216s.

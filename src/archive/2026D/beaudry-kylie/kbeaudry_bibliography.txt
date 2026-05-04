@@ -1,0 +1,5 @@
+Bibliography
+
+Bohl, Evans. 2022. “How to Make Toon Outlines in UE5.” YouTube. August 5, 2022. https://www.youtube.com/watch?v=9KvUfnrHcqM.
+Pitchfork Academy (MizzoFrizzo & Co.). 2025. “How to Create an Advanced Cel Shader - Unreal Engine 5 Materials Tutorial.” YouTube. January 7, 2025. https://www.youtube.com/watch?v=HDyswSWIdY0.
+Retro VFX. 2022. “Unity Shader Tutorial - Fresnel Fix for Cylinders at Awkward Angles.” YouTube. December 19, 2022. https://www.youtube.com/watch?v=dxlN7gOiOOk.

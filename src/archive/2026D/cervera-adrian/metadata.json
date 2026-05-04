@@ -1,44 +1,81 @@
 {
   "author": {
     "name": "Adrian Cervera",
-    "graduation_year": "2027",
-    "major": "CS/IMGD",
-    "contact_email": "jdoe@wpi.edu",
-    "portfolio_url": "https://janedoe.com"
+    "graduation_year": "2028",
+    "major": "Computer Science",
+    "contact_email": "aacervera@wpi.edu",
+    "portfolio_url": "https://lunarflame.dev",
+
+    "instructions": "Fill out all relevant fields in this document. If you are not using a field (i.e., you don't have any code blocks) then fully delete that field. Within the 'projects' array below, include 1 entry for each of your experiments. You can copy and past for additional projects."
   },
   "projects": [
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Audio-Reactive Niagara Storm",
-      "tags": ["Niagara", "Lumen", "Metasounds"],
-      "engine_version": "5.7.4",
-      "instruction_count": 184,
-      "blueprint_url": "https://blueprintue.com/render/xxxx1/",
-      "video_file": "storm-vfx-demo.mp4",
-      "description": "Exploration of linking Metasound envelope followers to Niagara spawn rates to create a storm that reacts to audio amplitude."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Energy Shield Shader",
+      "engine_version": "2021.3.45f",
+      "description": "A translucent energy shield made using a hexagonal texture. I tried to make this from scratch with minimal references.",
+
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "pdf_file":       ["FresnelShieldShader.pdf"],
+      "codeLang":       ["ShaderLab"],
+      "override_thumb": true
     },
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Procedural Lightning Ribbon",
-      "tags": ["HLSL", "Ribbon-Emitter", "Lumen"],
-      "engine_version": "5.7.4",
-      "instruction_count": 92,
-      "blueprint_url": "https://blueprintue.com/render/xxxx2/",
-      "video_file": "lightning-vfx-demo.mp4",
-      "description": "A custom HLSL shader driving a Niagara ribbon emitter to simulate branching lightning strikes with real-time Lumen emission."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Fireball Shader",
+      "engine_version": "2021.3.45f",
+      "description": "My attempt at making a fireball from scratch. No particle effects, just Unity Shader Graph.",
+      
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "codeLang":       ["ShaderLab"],
+      "override_thumb": true
     },
     {
-      "course_id": "IMGD-4000",
-      "semester": "2026-Fall",
-      "project_title": "Advanced Fluid Dynamics",
-      "tags": ["EmberGen", "VDB", "Volumetrics"],
-      "engine_version": "5.8.0",
-      "instruction_count": 310,
-      "blueprint_url": "https://blueprintue.com/render/xxxx3/",
-      "video_file": "fluid-vfx-demo.mp4",
-      "description": "Integration of EmberGen VDB exports into Unreal using the new volumetric rendering pipeline for realistic fire and smoke."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Nebula Shader",
+      "engine_version": "2021.3.45f",
+      "description": "My attempt to make a galaxy/nebula shader from scratch. Uses noise distortion, color interpolation, and the Voronoi effect.",
+      
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "codeLang":       ["ShaderLab"],
+      "override_thumb": true
+    },
+
+    {
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Electricity Shader",
+      "engine_version": "2021.3.45f",
+      "description": "An electricity shader I made using a tutorial on Youtube.",
+      
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "codeLang":       ["ShaderLab"],
+      "override_thumb": true
+    },
+    {
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Dissolve Shader",
+      "engine_version": "2021.3.45f",
+      "description": "An oscillating dissolving shader made using a tutorial on Youtube.",
+      
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "codeLang":       ["ShaderLab"],
+      "override_thumb": true
+    },
+    {
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Hologram Shader",
+      "engine_version": "2021.3.45f",
+      "description": "A simple hologram shader made using a tutorial on Youtube.",
+      
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "codeLang":       ["ShaderLab"],
+      "override_thumb": true
     }
   ]
 }
