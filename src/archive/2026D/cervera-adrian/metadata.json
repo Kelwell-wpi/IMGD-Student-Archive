@@ -29,6 +29,7 @@
       "description": "My attempt at making a fireball from scratch. No particle effects, just Unity Shader Graph.",
       
       "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "pdf_file":       ["FireballShader.pdf"],
       "codeLang":       ["ShaderLab"],
       "override_thumb": true
     },
@@ -40,6 +41,7 @@
       "description": "My attempt to make a galaxy/nebula shader from scratch. Uses noise distortion, color interpolation, and the Voronoi effect.",
       
       "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "pdf_file":       ["NebulaShader.pdf"],
       "codeLang":       ["ShaderLab"],
       "override_thumb": true
     },
