@@ -1,0 +1,12 @@
+﻿1. “Unreal Engine 5 Beginner Tutorial - UE5 Starter Course”. Unreal Sensei, Published on Youtube, 2023. https://youtu.be/k-zMkzmduqI.  
+2. “Liquigen Quick Start Guide”. Royals & Rogues, Published on Youtube, 2025. https://www.youtube.com/watch?v=db2XawZWBaI.
+3.  “GeoGen Basics In Depth Tutorial”. Kiwiwi, Published on Youtube, 2024. https://www.youtube.com/watch?v=8Qpu_a37j-Y.
+4. “#UE5 Series: Intro to Liquid Simulation in Unreal Engine”. SARKAMARI, Published on Youtube, 2024. https://www.youtube.com/watch?v=fyMhOi1eQ_s.
+5. “How I made this Voxel Environment in Unreal Engine”. 2late, Published on Youtube, 2026. https://www.youtube.com/watch?v=z5_7UIXwrI8.
+6. “Introduction to Shader Development in Unreal Engine: Practical | Part 02”. Escape Studios, Published on Youtube, 2026. https://www.youtube.com/watch?v=de-BU_f9-0A.
+7. “Liquigen Advanced Tutorial | Importing Objects, Exporting Mesh”. Royals & Rogues, Published on Youtube, 2025. https://www.youtube.com/watch?v=7pVP7WjTYLE.
+8. “Liquigen + Unreal Engine: tips & techniques - Part 1”. NyjoFX, Published on Youtube, 2025. https://www.youtube.com/watch?v=_v0esS0nUJQ.      
+9. “Liquigen + Unreal Engine: tips & techniques - Part 2”. NyjoFX, Published on Youtube, 2025. https://www.youtube.com/watch?v=4c7qBGJQ7CA.
+10. “Importing Alembic Geometry Cache [Fluid Simulation] into Unreal Engine 4 and 5: with Chris Cobb”. LightStomp, Published on Youtube, 2022. https://www.youtube.com/watch?v=qbaoRjjlul8.
+11.  “How To Create A Water Material - Unreal Engine 5 Materials Tutorial”. Pitchfork Academy, Published on Youtube, 2025. https://www.youtube.com/watch?v=-astLOqUHBo.
+12. “Starter Content Missing in Unreal Engine 5.7? Here’s How to Add It Back (UE5 Tutorial). JMAC Games UE, Published on Youtube, 2026. https://www.youtube.com/watch?v=IChae-jPX10.

@@ -1,0 +1,21 @@
+OUTLINE SHADER
+
+Best Tutorial:
+Gorka Games. "How to Make a Simple Outline Material in Unreal Engine 5 (In 3 Mins!)" YouTube. April 24, 2025. https://youtu.be/YJQ-hkToKuY?si=ysaaKhbOXPtnlLas.
+
+Other Tutorials I Followed:
+renderBucket. “Unreal Engine 5.5 - Simple & Easy Toon/Comic/Cel Shading.” YouTube. February 24, 2025. https://www.youtube.com/watch?v=TqZKf8tMphU.
+Chris Folea Makes Things. “How I Made a Stylized Comic Book Shader in Unreal Engine 5.” YouTube. August 31, 2024. https://www.youtube.com/watch?v=Ctx1TP0XDUM.
+
+----------------------
+
+CEL SHADER
+
+Same as above, just the cel shader part of it:
+renderBucket. “Unreal Engine 5.5 - Simple & Easy Toon/Comic/Cel Shading.” YouTube. February 24, 2025. https://www.youtube.com/watch?v=TqZKf8tMphU.
+
+----------------------
+
+HATCHING SHADER
+
+Kamil Hepner. “Hatching Shader Tutorial.” YouTube. December 5, 2021. https://www.youtube.com/watch?v=18U50KPdD2A.

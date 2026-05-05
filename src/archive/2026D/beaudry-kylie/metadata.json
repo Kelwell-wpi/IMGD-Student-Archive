@@ -18,7 +18,7 @@
       "description": "Masked overlay material outline shader. Can be applied to specific objects rather than everything in a scene.",
 
       "tags":           ["Shader", "Material", "Outline", "Stylized"], 
-      "video_file":     ["https://youtu.be/IN1VJ6bPS2U"],
+      "video_file":     ["https://youtu.be/YDaI0UIMog4"],
       "blueprint_url":  ["https://blueprintue.com/blueprint/2l6s8vrg/"],
       "hasTutorial":    true,
       "archivePath":    "2026D/beaudry-kylie/T1",
@@ -33,7 +33,7 @@
       "description": "Screen based outline shader with a few quality of life features (minimum line thickness, consistent line thickness).",
       
       "tags":           ["Shader", "Post-Process", "Screen based", "Outline", "Stylized"], 
-      "video_file":     ["https://youtu.be/YDaI0UIMog4"],
+      "video_file":     ["https://youtu.be/IN1VJ6bPS2U"],
       "blueprint_url":  ["https://blueprintue.com/blueprint/e-rx6vi8/", "https://blueprintue.com/blueprint/kqw92_uk/", "https://blueprintue.com/blueprint/y-fowcf-/", "https://blueprintue.com/blueprint/et6dqmat/", "https://blueprintue.com/blueprint/j3o5zu12/"],
       "hasTutorial":    true,
       "archivePath":    "2026D/beaudry-kylie/T1",

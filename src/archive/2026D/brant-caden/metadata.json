@@ -1,44 +1,49 @@
 {
   "author": {
     "name": "Caden Brant",
-    "graduation_year": "2027",
-    "major": "CS/IMGD",
-    "contact_email": "jdoe@wpi.edu",
-    "portfolio_url": "https://janedoe.com"
+    "graduation_year": "2028?",
+    "major": "IMGD (BA)",
+    "contact_email": "cbrant@wpi.edu"
   },
+
   "projects": [
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Audio-Reactive Niagara Storm",
-      "tags": ["Niagara", "Lumen", "Metasounds"],
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Liquigen - Waterfall Alembic Cache",
       "engine_version": "5.7.4",
-      "instruction_count": 184,
-      "blueprint_url": "https://blueprintue.com/render/xxxx1/",
-      "video_file": "storm-vfx-demo.mp4",
-      "description": "Exploration of linking Metasound envelope followers to Niagara spawn rates to create a storm that reacts to audio amplitude."
+      "description": "Medium-res waterfall animation exported from Liquigen from JangaFX. Importable into Unreal (after a lot of trouble), but slightly artifacted.",
+
+      "tags":           ["JangaFX", "LiquiGen", "Model", "Fluid Simulation"], 
+      "video_file":     ["https://drive.google.com/file/d/1g-XFUYyLAvOEp6_02b6LMX5tFJ4dAxF1/view?usp=sharing"],
+      "codeFile":       "Caden Brant - IMGD4099 Citations.txt",
+      "codeLang":       "txt"
     },
     {
-      "course_id": "IMGD-3000",
-      "semester": "2026-Spring",
-      "project_title": "Procedural Lightning Ribbon",
-      "tags": ["HLSL", "Ribbon-Emitter", "Lumen"],
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Water Shader With Normal-Based Ripples",
       "engine_version": "5.7.4",
-      "instruction_count": 92,
-      "blueprint_url": "https://blueprintue.com/render/xxxx2/",
-      "video_file": "lightning-vfx-demo.mp4",
-      "description": "A custom HLSL shader driving a Niagara ribbon emitter to simulate branching lightning strikes with real-time Lumen emission."
+      "description": "Semirealistic single-layer water material with distance-based ripple effects and easily editable color/opacity.",
+      
+      "tags":           ["Materials", "Shaders", "Normals"], 
+      "video_file":     ["https://drive.google.com/file/d/1cAEmyhAo9lzl7svcQkaRgr0oVGZ1vjXO/view?usp=sharing", "https://drive.google.com/file/d/1VNnEP3ZABz5IU9O_FsdaxvQ8JxmAdt3I/view?usp=sharing"],
+      "pdf_file":       ["Caden Brant - IMGD4099 Written Tutorial - Water Shader.pdf"],
+      "blueprint_url":  ["https://blueprintue.com/blueprint/e5jkc8w0/"],
+      "codeFile":       "Caden Brant - IMGD4099 Citations.txt",
+      "codeLang":       "txt"
     },
     {
-      "course_id": "IMGD-4000",
-      "semester": "2026-Fall",
-      "project_title": "Advanced Fluid Dynamics",
-      "tags": ["EmberGen", "VDB", "Volumetrics"],
-      "engine_version": "5.8.0",
-      "instruction_count": 310,
-      "blueprint_url": "https://blueprintue.com/render/xxxx3/",
-      "video_file": "fluid-vfx-demo.mp4",
-      "description": "Integration of EmberGen VDB exports into Unreal using the new volumetric rendering pipeline for realistic fire and smoke."
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Oasis Scene",
+      "engine_version": "5.7.4",
+      "description": "Fully arranged and lit scene using a Liquigen waterfall, custom-made water shader, and other imported or included assets.",
+      
+      "tags":           ["Scene", "Lumen", "Landscape", "Fab"], 
+      "video_file":     ["https://drive.google.com/file/d/108xMWKxpch9_McBr_MtViYBeuMI1C-P4/view?usp=sharing"],
+      "codeFile":       "Caden Brant - IMGD4099 Citations.txt",
+      "codeLang":       "txt"
     }
   ]
 }

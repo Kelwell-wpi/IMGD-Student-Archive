@@ -17,9 +17,9 @@
       "description": "A realistic nuclear explosion effect created in EmberGen, focusing on smoke plume shape, fire volume, and timing.",
 
       "tags":           ["EmberGen", "Explosion", "Fire", "Smoke", "VFX", "Simulation"], 
-      "video_file":     ["https://www.youtube.com/playlist?list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw"],
+      "video_file":     ["https://www.youtube.com/watch?v=zUExxYx3vUc&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=1"],
       "pdf_file":       ["VFX_Portfolio_Debrief.pdf"],
-      "codeFile":       "Bibliography.txt",
+      "codeFile":       "bibliography.txt",
       "codeLang":       "txt",
       "override_thumb": true
     },
@@ -31,9 +31,9 @@
       "description": "A crashing wave effect created in LiquiGen, focusing on fluid motion, wave behavior, and readable water movement across the scene.",
       
       "tags":           ["LiquiGen", "Water", "Fluid", "VFX", "Simulation"], 
-      "video_file":     ["https://www.youtube.com/watch?v=lFRhs0YvrBk&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=1"],
+      "video_file":     ["https://www.youtube.com/watch?v=lFRhs0YvrBk&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=2"],
       "pdf_file":       ["VFX_Portfolio_Debrief.pdf"],
-      "codeFile":       "Bibliography.txt",
+      "codeFile":       "bibliography.txt",
       "codeLang":       "txt"
     },
     {
@@ -44,9 +44,9 @@
       "description": "A procedural mountain crevasse environment created in GeoGen, using terrain shaping, color gradients, lighting, and fog to create depth and atmosphere.",
       
       "tags":           ["GeoGen", "Terrain", "Mountain", "Crevasse", "Fog", "VFX"], 
-      "video_file":     ["https://www.youtube.com/watch?v=OSkzH_OFvB8&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=2"],
+      "video_file":     ["https://www.youtube.com/watch?v=OSkzH_OFvB8&list=PLYyrfitReCnwCvw4TJAPxAUkP1L0uveIw&index=3"],
       "pdf_file":       ["VFX_Portfolio_Debrief.pdf"],
-      "codeFile":       "Bibliography.txt",
+      "codeFile":       "bibliography.txt",
       "codeLang":       "txt"
     }
   ]
