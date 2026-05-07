@@ -23,7 +23,6 @@
             const titleSlug = proj.project_title.toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
             const slug = `${authorSlug}-${titleSlug}`;
             
-            // Handle both the old string format and the new array format for video_file
             const videoSource = Array.isArray(proj.video_file) ? proj.video_file[0] : proj.video_file;
 
             projects.push({
@@ -32,7 +31,7 @@
               authorName: data.author.name,
               videoUrl: videoSource, 
               semesterLabel: proj.semester || semester,
-              tags: proj.tags || [] // Ensure tags is always an array
+              tags: proj.tags || [] 
             });
           });
         }
@@ -119,7 +118,7 @@
       >
         <div class="media-container">
           <img 
-            v-if="project.override_thumb",
+            v-if="project.override_thumb"
             src="@/assets/VFX-thumb.png" 
             class="gallery-thumb"
             alt="Project Placeholder"
