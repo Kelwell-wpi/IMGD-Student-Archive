@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import vfxGallery from '../components/vfxGallery.vue'
 import ProjectDetail from '../components/ProjectDetail.vue'
 
@@ -21,8 +21,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-  // Use WebHistory for clean URLs
-  history: createWebHistory('/IMGD-Student-Archive/'), 
+  history: createWebHashHistory('/IMGD-Student-Archive/'), 
   routes,
   scrollBehavior() {
     return { top: 0 }
