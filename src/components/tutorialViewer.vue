@@ -152,6 +152,10 @@ watch(() => props.path, loadTutorial);
   color: #AC2B37;
 }
 
+.tutorial-content :deep(h3) {
+  margin-top: 60px;
+}
+
 .tutorial-content :deep(img) {
   margin-top: 50px;
 }

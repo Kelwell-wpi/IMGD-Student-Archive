@@ -508,4 +508,8 @@
     padding: 100px 20px;
     text-align: center;
   }
+
+  .tutorial-section {
+    width: 100%;
+  }
 </style>
