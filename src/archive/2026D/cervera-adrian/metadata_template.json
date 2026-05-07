@@ -1,0 +1,50 @@
+{
+  "author": {
+    "name": "Adrian Cervera",
+    "graduation_year": "2028",
+    "major": "Computer Science",
+    "contact_email": "aacervera@wpi.edu",
+    "portfolio_url": "https://lunarflame.dev",
+
+    "instructions": "Fill out all relevant fields in this document. If you are not using a field (i.e., you don't have any code blocks) then fully delete that field. Within the 'projects' array below, include 1 entry for each of your experiments. You can copy and past for additional projects."
+  },
+  "projects": [
+    {
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Energy Shield Shader",
+      "engine_version": "2021.3.45f",
+      "description": "A translucent energy shield made using a hexagonal texture. I tried to make this from scratch with minimal references. github: https://github.com/Phantomforce260/IMGD4099-Topics",
+
+      "video_file":     ["https://vimeo.com/1189607810?share=copy&fl=sv&fe=ci"],
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "pdf_file":       ["FresnelShieldShader.pdf"],
+
+      "codeLang":       ["ShaderLab"]
+    },
+    {
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Fireball Shader",
+      "engine_version": "2021.3.45f",
+      "description": "My attempt at making a fireball from scratch. No particle effects, just Unity Shader Graph. github: https://github.com/Phantomforce260/IMGD4099-Topics",
+      
+      "video_file":     ["https://vimeo.com/1189607808?share=copy&fl=sv&fe=ci"],
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "pdf_file":       ["FireballShader.pdf"],
+      "codeLang":       ["ShaderLab"]
+    },
+    {
+      "course_id": "IMGD-4099",
+      "term": "D-Term 2026",
+      "project_title": "Nebula Shader",
+      "engine_version": "2021.3.45f",
+      "description": "My attempt to make a galaxy/nebula shader from scratch. Uses noise distortion, color interpolation, and the Voronoi effect. github: https://github.com/Phantomforce260/IMGD4099-Topics",
+      
+      "video_file":     ["https://vimeo.com/1189607809?share=copy&fl=sv&fe=ci"],
+      "tags":           ["Unity", "Shader Graph", "Node Graphs"], 
+      "pdf_file":       ["NebulaShader.pdf"],
+      "codeLang":       ["ShaderLab"]
+    }
+  ]
+}

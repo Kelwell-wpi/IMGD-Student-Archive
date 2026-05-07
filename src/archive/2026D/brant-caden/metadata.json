@@ -15,7 +15,7 @@
       "description": "Medium-res waterfall animation exported from Liquigen from JangaFX. Importable into Unreal (after a lot of trouble), but slightly artifacted.",
 
       "tags":           ["JangaFX", "LiquiGen", "Model", "Fluid Simulation"], 
-      "video_file":     ["https://drive.google.com/file/d/1g-XFUYyLAvOEp6_02b6LMX5tFJ4dAxF1/view?usp=sharing"],
+      "video_file":     ["https://youtu.be/mZMY5bOEYAo?si=s68uj7JzXBPMJnrg"],
       "codeFile":       "Caden Brant - IMGD4099 Citations.txt",
       "codeLang":       "txt"
     },
@@ -27,7 +27,7 @@
       "description": "Semirealistic single-layer water material with distance-based ripple effects and easily editable color/opacity.",
       
       "tags":           ["Materials", "Shaders", "Normals"], 
-      "video_file":     ["https://drive.google.com/file/d/1cAEmyhAo9lzl7svcQkaRgr0oVGZ1vjXO/view?usp=sharing", "https://drive.google.com/file/d/1VNnEP3ZABz5IU9O_FsdaxvQ8JxmAdt3I/view?usp=sharing"],
+      "video_file":     ["https://youtu.be/3Kz7jWBlkF0?si=scQ3_Owx4taBnoJS", "https://youtu.be/ueNcocuhrAY?si=qEj0Bug5_WL9C8xD"],
       "pdf_file":       ["Caden Brant - IMGD4099 Written Tutorial - Water Shader.pdf"],
       "blueprint_url":  ["https://blueprintue.com/blueprint/e5jkc8w0/"],
       "codeFile":       "Caden Brant - IMGD4099 Citations.txt",
@@ -41,7 +41,7 @@
       "description": "Fully arranged and lit scene using a Liquigen waterfall, custom-made water shader, and other imported or included assets.",
       
       "tags":           ["Scene", "Lumen", "Landscape", "Fab"], 
-      "video_file":     ["https://drive.google.com/file/d/108xMWKxpch9_McBr_MtViYBeuMI1C-P4/view?usp=sharing"],
+      "video_file":     ["https://youtu.be/4kNzg0TtsOk?si=i39PXJb2dxa4A4Tf"],
       "codeFile":       "Caden Brant - IMGD4099 Citations.txt",
       "codeLang":       "txt"
     }

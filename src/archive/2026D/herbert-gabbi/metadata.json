@@ -15,7 +15,7 @@
       "description": "Playing with different ways to achieve an outline shader.",
 
       "tags":           ["Unreal Engine", "Shader", "Real-Time"], 
-      "video_file":     ["https://drive.google.com/file/d/1jiVcegPZVHIeU--DlgWwFbB4O77P1UHO/view?usp=drive_link"],
+      "video_file":     ["https://youtu.be/uzvLkOAQ2wc?si=phK8S3oAqCaOqbaM"],
       "blueprint_url":  ["https://blueprintue.com/render/qpbc0zvn/", "https://blueprintue.com/render/98i4w12r/"]
     },
     {
@@ -26,7 +26,7 @@
       "description": "A stupid simple pixel shader with color bending.",
       
       "tags":           ["Unreal Engine", "Shader", "Post-Process"], 
-      "video_file":     ["https://drive.google.com/file/d/1oluW4uaeoW83_1KDZn0AHNlR9ZyC4qgi/view?usp=drive_link"],
+      "video_file":     ["https://youtu.be/oCt4UQIWrP0?si=ukLq16GAka3iCWSs"],
       "blueprint_url":  ["https://blueprintue.com/render/pnu3f0cx/"]
     },
     {
@@ -37,7 +37,7 @@
       "description": "A stylized shader to emulate the artistic technique of hatching.",
       
       "tags":           ["Unreal Engine", "Shader", "Post-Process"],
-      "video_file":     ["https://drive.google.com/file/d/1oe9TIvyfwoutQonerYCj76fgD-4Ghcey/view?usp=drive_link"],
+      "video_file":     ["https://youtu.be/L_Ov2Fskj1o?si=kIU1AAvH-f5-qmCE"],
       "pdf_file":       ["Creating a Hatching Post-Process Shader in Unreal Engine.pdf"],
       "blueprint_url":  ["https://blueprintue.com/render/b9ti_cis/"]
     }
