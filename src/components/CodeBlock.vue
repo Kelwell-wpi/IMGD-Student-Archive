@@ -43,34 +43,34 @@ watch([() => props.fileName, () => props.authorFolder], loadCodeContent);
 </template>
 
 <style scoped>
-.code-block-container {
-  margin: 1.5rem 0;
-  background: #121212;
-  border: 1px solid #333;
-  border-radius: 6px;
-  overflow: hidden;
-  text-align: left;
-}
-.code-header {
-  background: #252525;
-  padding: 0.6rem 1rem;
-  border-bottom: 1px solid #333;
-  display: flex;
-  justify-content: space-between;
-  color: #aaa;
-  font-family: monospace;
-}
-.lang-label {
-  font-weight: 700;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  color: #666;
-}
-pre {
-  margin: 0;
-  padding: 1.25rem;
-  overflow: auto;
-  color: #ccc;
-  font-size: 0.9rem;
-}
+  .code-block-container {
+    margin: 1.5rem 0;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: left;
+  }
+  .code-header {
+    background: #252525;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    font-family: monospace;
+  }
+  .lang-label {
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #666;
+  }
+  pre {
+    margin: 0;
+    padding: 1.25rem;
+    overflow: auto;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
 </style>

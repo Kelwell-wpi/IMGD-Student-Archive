@@ -61,10 +61,13 @@
   const getThumbnailUrl = (url) => {
     const ytId = getYouTubeId(url);
     if (ytId) return `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+
     const vimeoId = getVimeoId(url);
     if (vimeoId) return `https://vumbnail.com/${vimeoId}.jpg`;
+
     const gdId = getGoogleDriveId(url);
     if (gdId) return `https://drive.google.com/thumbnail?id=${gdId}&sz=w1280`;
+    
     return '';
   };
 
@@ -240,7 +243,6 @@
       </main>
 
       <aside class="sidebar-aside">
-        <!-- HEADER SECTION (Top on mobile) -->
         <header class="project-info-header">
           <div class="project-header">
             <h1>{{ project.project_title }}</h1>

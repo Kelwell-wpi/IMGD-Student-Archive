@@ -12,7 +12,7 @@
     try {
       Object.keys(modules).forEach((path) => {
         const data = modules[path].default || modules[path];
-        if (!data || !data.author) return; // Safety check
+        if (!data || !data.author) return; 
 
         const pathParts = path.split('/');
         const semester = pathParts[3]; 
@@ -81,12 +81,16 @@
 
   const getThumbnailUrl = (url) => {
     if (!url) return '';
+
     const ytId = getYouTubeId(url);
     if (ytId) return `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+
     const vimeoId = getVimeoId(url);
     if (vimeoId) return `https://vumbnail.com/${vimeoId}.jpg`;
+
     const gdId = getGoogleDriveId(url);
     if (gdId) return `https://drive.google.com/thumbnail?id=${gdId}&sz=w1280`;
+
     return '';
   };
 </script>
@@ -156,7 +160,6 @@
 </template>
 
 <style scoped>
-/* Styles remain unchanged as requested */
   .gallery-header {
     width: 75%;
     height: 200px;
